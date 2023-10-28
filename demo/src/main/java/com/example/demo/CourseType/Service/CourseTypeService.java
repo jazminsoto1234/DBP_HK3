@@ -29,6 +29,10 @@ public class CourseTypeService {
         }
     }
 
+    public CourseType getCourseTypebyId(Long id){
+        return courseTypeRepository.findById(id).get();
+    }
+
     public void deleteCourseTypeById(Long id) {
         courseTypeRepository.deleteById(id);
     }

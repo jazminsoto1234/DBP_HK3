@@ -1,4 +1,4 @@
-package com.example.demo.CourseAssessmentDetails;
+package com.example.demo.CourseAssessmentDetails.Domain;
 import com.example.demo.Course.Domain.Course;
 import com.example.demo.CourseAssessment.Domain.CourseAssessment;
 import com.example.demo.Professor.Professor;

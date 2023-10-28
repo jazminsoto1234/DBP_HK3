@@ -20,9 +20,9 @@ public class Professor {
     private String email;
     private String fullName;
 
-    @OneToOne
-    @JoinColumn(name = "course_id")
-    private Course course;
+    //@OneToOne
+    //@JoinColumn(name = "course_id")
+    //private Course course;
 
     
     //private CourseAssessmentDetails course_a_d;

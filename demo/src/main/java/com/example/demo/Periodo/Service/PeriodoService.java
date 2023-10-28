@@ -28,6 +28,10 @@ public class PeriodoService {
         }
     }
 
+    public Periodo getByPeriodoId(Long id){
+        return periodoRepository.findById(id).get();
+    }
+
     public void deletePeriodoById(Long id) {
         periodoRepository.deleteById(id);
     }
