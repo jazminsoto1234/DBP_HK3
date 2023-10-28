@@ -13,20 +13,22 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "Periodo")
 public class CourseAssessmentDetails {
-    @Id 
+    @Id
     private Long id;
     private String Score;
     private String seccion;
-      private String secciongrup;
+    private String secciongrup;
     @OneToOne
-    @JoinColumn(name = "course_id")
+    @JoinColumn(name = "student_id")
     private Student student;
+
     @OneToOne
-    @JoinColumn(name = "course_id")
-     private Professor profesor;///
+    @JoinColumn(name = "professor_id")
+    private Professor profesor;
+
     @OneToOne
-    @JoinColumn(name = "course_id")
-     private CourseAssessment CourseAssessment ;
+    @JoinColumn(name = "course_assessment_id")
+    private CourseAssessment CourseAssessment;
 
     public CourseAssessmentDetails(){};
     public CourseAssessmentDetails(Long id, String score, String seccion, String secciongrup, Student student, Professor profesor, com.example.demo.CourseAssessment.Domain.CourseAssessment courseAssessment) {
