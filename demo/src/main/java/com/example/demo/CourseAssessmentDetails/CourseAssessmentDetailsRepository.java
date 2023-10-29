@@ -1,11 +1,7 @@
-package com.example.demo.CourseAssessmentDetails.Domain;
-
+package com.example.demo.CourseAssessmentDetails;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.example.demo.CourseAssessmentDetails.Domain.CourseAssessmentDetails;
-
 public interface CourseAssessmentDetailsRepository extends JpaRepository<CourseAssessmentDetails, Long> {
-
     
 }

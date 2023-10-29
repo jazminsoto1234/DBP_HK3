@@ -21,9 +21,9 @@ public class Student {
     private String code;
     private String area; //Debe ser entidad. No se si se puede dejar como String
 
-    //@OneToOne
-    //@JoinColumn(name = "course_id")
-    //private Course course;
+    @OneToOne
+    @JoinColumn(name = "course_id")
+    private Course course;
 
    /////me flata
     

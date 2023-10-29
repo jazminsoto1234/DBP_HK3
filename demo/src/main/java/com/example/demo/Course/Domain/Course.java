@@ -40,7 +40,7 @@ public class Course {
     
     public Course(){}
 
-    public Course(Long id, String name, Integer credits, String courseContened, String code, String area, String HRGroup, Integer cycle, CourseType courseType){
+    public Course(Long id, String name, Integer credits, String courseContened, String code, String area, String HRGroup, Integer cycle){
         this.id= id;
         this.name = name;
         this.credits = credits;
@@ -49,7 +49,6 @@ public class Course {
         this.HRGroup = HRGroup;
         this.area = area;
         this.cycle = cycle;
-        this.courseType = courseType;
 
     }
 

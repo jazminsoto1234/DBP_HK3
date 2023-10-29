@@ -1,8 +1,6 @@
 package com.example.demo.CourseType.Service;
 
 import java.util.Optional;
-
-
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -29,10 +27,6 @@ public class CourseTypeService {
         }
     }
 
-    public CourseType getCourseTypebyId(Long id){
-        return courseTypeRepository.findById(id).get();
-    }
-
     public void deleteCourseTypeById(Long id) {
         courseTypeRepository.deleteById(id);
     }
@@ -45,5 +39,4 @@ public class CourseTypeService {
         }
         return null;
     }
-
 }

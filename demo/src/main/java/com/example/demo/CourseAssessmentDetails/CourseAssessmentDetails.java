@@ -1,4 +1,5 @@
-package com.example.demo.CourseAssessmentDetails.Domain;
+package com.example.demo.CourseAssessmentDetails;
+
 import com.example.demo.Course.Domain.Course;
 import com.example.demo.CourseAssessment.Domain.CourseAssessment;
 import com.example.demo.Professor.Professor;
@@ -13,11 +14,13 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "Periodo")
 public class CourseAssessmentDetails {
+    
     @Id
     private Long id;
     private String Score;
     private String seccion;
     private String secciongrup;
+    
     @OneToOne
     @JoinColumn(name = "student_id")
     private Student student;
